@@ -87,6 +87,102 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*****************BASE STYLES******************/
+body {
+    background: #B2E7E8;
+    color: #304D63;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0;
+    width: 80%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Alata', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+/*****************HEADER********************/
+nav {
+    float: left;
+    margin: 30px auto;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 5px
+}
+
+#name {
+    clear: both;
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/*******************MAIN******************/
+#projects {
+    margin-top: 80px;
+}
+
+#projects img {
+    margin: 20px auto;
+    width: 100%;
+}
+
+#projects h4 {
+    margin-bottom: 40px;
+}
+
+
+/******************ABOUT********************/
+
+
+/*****************SKILLS*******************/
+
+
+/****************PROJECTS*****************/
+
+
+/*******************CONTACT*******************/
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
