@@ -87,30 +87,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*** Colors
+#304D63 (dark blue)
+#B2E7E8 (light blue)
+#8FB9AA (green)
+#F2D096 (yellow)
+#ED8975 (red) ***/
+
+
+
 /*****************BASE STYLES******************/
 body {
-    background: #B2E7E8;
     color: #304D63;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     margin: 0 auto;
     overflow: auto;
     padding: 0;
+}
+
+header, #about {
+    background: #F2D096;
+    display: flex;
+    justify-content: center;
+}
+
+#projects, #skills, #contact {
+    background: #B2E7e8;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
     width: 80%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .link {
     font-family: 'Alata', sans-serif;
     margin: 0 auto;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.25em;
 }
 
 h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-size: 1.5em;
+}
+
 h4 {
     font-size: 1.25em;
+}
+
+a {
+    color: #304D63;
+    text-decoration: none;
 }
 
 /*****************HEADER********************/
@@ -132,22 +168,14 @@ nav ul li {
     padding-right: 5px
 }
 
-#name {
+#title {
     clear: both;
     margin: 30px auto;
 }
 
-h1 {
-    font-size: 2.25em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-/*******************MAIN******************/
+/*******************PROJECTS******************/
 #projects {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 #projects img {
@@ -159,18 +187,105 @@ h3 {
     margin-bottom: 40px;
 }
 
+.despcription {
+    margin-bottom: 30px;
+}
 
-/******************ABOUT********************/
+.link {
+    background: #ED8975;
+    border: 0;
+    border-radius: 50px;
+    display: flex;
+    font-size: 1.125em;
+    font-weight: bold;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 1em 3em;
+    text-transform: uppercase;
+}
 
+.link a {
+    color: white;
+}
 
 /*****************SKILLS*******************/
+#skills {
+    padding-bottom: 80px;
+}
 
+#skills h2 {
+    margin: 20px auto;
+}
 
-/****************PROJECTS*****************/
+#skills h3 {
+    margin: 20px auto;
+}
 
+#skills ul {
+    padding: 0;
+}
+
+#skills ul li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    border: 0;
+    padding: 1em 3em;
+    background: #F2D096;
+}
+
+/******************ABOUT********************/
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about img {
+    border: 20px solid white ;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#about h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    margin: 40px auto;
+}
 
 /*******************CONTACT*******************/
+#contact {
+    padding-top: 50px;
+}
 
+#contact p {
+    margin: 60px auto;
+    text-align: center;
+}
+
+#contact ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 30px auto;
+}
+
+#contact ul li {
+    display: inline-block;
+    padding: 0 2em;
+}
+
+i {
+    font-size: 1.5em;
+}
 
 
 
