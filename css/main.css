@@ -158,14 +158,14 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
 }
 
 nav ul li {
     display: inline-block;
     font-weight: bold;
-    padding-right: 5px
+    padding-right: 10px;
 }
 
 #title {
@@ -176,6 +176,10 @@ nav ul li {
 /*******************PROJECTS******************/
 #projects {
     padding-top: 80px;
+}
+
+#projects h2 {
+    clear: both;
 }
 
 #projects img {
@@ -192,6 +196,7 @@ nav ul li {
 }
 
 .link {
+    align-items: center;
     background: #ED8975;
     border: 0;
     border-radius: 50px;
@@ -381,14 +386,73 @@ i {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries Start Here
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media all and (min-width: 765px) {
+  /* Tablet Styles */
+  /*Main Styles*/  
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+        font-size: 2.5em;
+  }
+
+  h3 {
+        font-size: 2.25em;
+  }
+
+  h4 {
+        font-size: 1.5em;
+  }
+  
+  /*Header Styles*/
+  nav {
+    margin: 60px auto;
+  }
+
+  nav ul li {
+    text-transform: uppercase;
+  }
+  
+  #title {
+    margin-bottom: 80px;
+  }
+
+  /*Projects Styles*/
+  #projects .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  #projects h2 {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .project {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 45%;
+  }
+
+  .project-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+
+  /*.skills {
+    justify-content: flex-start;
+  }
+
+  .tools {
+    justify-content: flex-start;
+  }*/
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
