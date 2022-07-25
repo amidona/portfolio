@@ -222,8 +222,8 @@ nav ul li {
     margin: 20px auto;
 }
 
-#skills h3 {
-    margin: 20px auto;
+#skills h4 {
+    margin: 30px auto;
 }
 
 #skills ul {
@@ -243,9 +243,8 @@ nav ul li {
 }
 
 /******************ABOUT********************/
-#about {
-    padding-top: 80px;
-    padding-bottom: 80px;
+#about .container {
+    margin: 80px auto;
 }
 
 #about img {
@@ -257,17 +256,16 @@ nav ul li {
 }
 
 #about h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px 0 15px;
 }
 
-#about h3 {
-    margin: 40px auto;
+#about h4 {
+    margin-bottom: 40px;
 }
 
 /*******************CONTACT*******************/
-#contact {
-    padding-top: 50px;
+#contact .container {
+    margin: 80px auto;
 }
 
 #contact p {
@@ -446,13 +444,52 @@ i {
     justify-content: flex-start;
   }
 
-  /*.skills {
-    justify-content: flex-start;
+  /*Skills Styles*/
+  #skills .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
-  .tools {
+  #skills h2 {
+    margin: 40px auto;
+    width: 100%;
+  }
+
+  #skills h4 {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+
+  #skills ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 0 40px;
+    }
+
+  #skills li {
+    display: flex;
+    flex-flow: column wrap;
     justify-content: flex-start;
-  }*/
+    width: 30%;
+  }
+
+  /*About Styles*/
+  
+  #about .container {
+    margin: 120px auto;
+  }
+  
+  #about img {
+    width: 40%;
+  }
+
+  /*Contact Styles*/
+  #contact .container {
+    margin: 120px auto;
+    }
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
