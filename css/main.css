@@ -174,8 +174,8 @@ nav ul li {
 }
 
 /*******************PROJECTS******************/
-#projects {
-    padding-top: 80px;
+#projects .container {
+    margin-top: 80px;
 }
 
 #projects h2 {
@@ -389,7 +389,7 @@ i {
 
 @media all and (min-width: 765px) {
   /* Tablet Styles */
-  /*Main Styles*/  
+  /*Base Styles*/  
   h1 {
     font-size: 3em;
   }
@@ -470,7 +470,7 @@ i {
 
   #skills li {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     width: 30%;
   }
@@ -488,6 +488,38 @@ i {
   /*Contact Styles*/
   #contact .container {
     margin: 120px auto;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /*Computer Styles*/
+
+    /*Header Styles*/
+    nav {
+        width: 50%;
+        float: right;
+    }
+
+    #title h1 {
+        margin-bottom: 15px;
+    }
+
+    /*Projects Styles*/
+    #projects h2 {
+        margin: 40px auto;
+    }
+
+    .project {
+        margin: 40px auto;
+    }
+
+    /*Skills Styles*/
+    #skills ul {
+        justify-content: space-evenly;
+    }
+    
+    #skills li {
+        width: 20%;
     }
 }
 
