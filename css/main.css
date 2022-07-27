@@ -521,6 +521,39 @@ i {
     #skills li {
         width: 20%;
     }
+
+    /*About Styles*/
+    #about .container {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 140px auto;
+    }
+      
+    #about-image {
+        justify-content: flex-start;
+        flex-basis: 50%;
+    }
+
+    #about img {
+        margin: 0;
+        width: 60%;
+    }
+
+    #about-content {
+        flex-basis: 50%;
+    }
+
+    #about h2 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #about h4 {
+        text-align: left;
+        margin: 0 0 40px;
+    }
 }
 
 @media print,
