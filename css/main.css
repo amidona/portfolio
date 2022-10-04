@@ -28,12 +28,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #8DB7B8;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #8DB7B8;
   text-shadow: none;
 }
 
@@ -119,6 +119,7 @@ header, #about {
 }
 
 .container {
+    max-width: 1200px;
     width: 80%;
 }
 
@@ -148,6 +149,10 @@ a {
     color: #304D63;
     text-decoration: none;
 }
+
+img {  
+	width: 100%; 
+} 
 
 /*****************HEADER********************/
 nav {
@@ -182,7 +187,7 @@ nav ul li {
     clear: both;
 }
 
-#projects img {
+#projects figure {
     margin: 20px auto;
     width: 100%;
 }
@@ -200,6 +205,7 @@ nav ul li {
     background: #ED8975;
     border: 0;
     border-radius: 50px;
+    color: white;
     display: flex;
     font-size: 1.125em;
     font-weight: bold;
@@ -247,7 +253,7 @@ nav ul li {
     margin: 80px auto;
 }
 
-#about img {
+#about figure {
     border: 20px solid white ;
     width: 80%;
     margin: auto;
@@ -481,7 +487,7 @@ i {
     margin: 120px auto;
   }
   
-  #about img {
+  #about figure {
     width: 40%;
   }
 
@@ -516,9 +522,11 @@ i {
     /*Skills Styles*/
     #skills ul {
         justify-content: space-evenly;
+        width: 100%;
     }
     
     #skills li {
+        
         width: 20%;
     }
 
@@ -532,11 +540,12 @@ i {
     }
       
     #about-image {
-        justify-content: flex-start;
+        display: flex;
+        justify-content: center;
         flex-basis: 50%;
     }
 
-    #about img {
+    #about figure {
         margin: 0;
         width: 60%;
     }
